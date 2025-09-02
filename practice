@@ -1,0 +1,52 @@
+# Project 1
+name = "nameer"
+age = 14
+height = 5.9
+isstudent = True
+
+print("Name:", name)
+print("Age:", age)
+print("Height:", height)
+print("Is Student:", isstudent)
+
+
+# Project 2
+subjects = []  
+while True:
+    subject = input("Enter student subject, write 'done' when finished:  ")
+    if subject.lower() == "done":  
+        break
+    else:
+        subjects.append(subject)
+
+print("Subjects:", subjects)
+
+
+# Project 3
+student = {
+    "name": "Ali",
+    "age": 18,
+    "height": 5.8,
+    "isstudent": True,
+    "subjects": subjects,  
+    "marks": {"math": 60, "english": 75, "science": 82}
+}
+print(student)
+
+
+# Project 4
+mark = int(input("Enter your marks: "))  
+if mark >= 50:
+    print("You passed the test")
+else:
+    print("You failed the test")
+
+
+# Project 5
+print("Name:", student["name"])
+print("Age:", student["age"])
+
+print("\n--- Report Card ---")
+for subject, score in student["marks"].items():   
+    print(f"{subject}: {score}")
+
